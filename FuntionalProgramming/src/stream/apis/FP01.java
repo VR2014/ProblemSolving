@@ -1,4 +1,4 @@
-package ref;
+package stream.apis;
 
 import java.util.List;
 

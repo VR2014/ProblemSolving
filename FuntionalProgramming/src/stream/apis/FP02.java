@@ -92,6 +92,7 @@ public class FP02 {
 		System.out.println("MAX value   :::  "+MaxValue);
 	}
 
+	@SuppressWarnings("unused")
 	private static int sum(int a, int b) {
 		return a + b;
 	}

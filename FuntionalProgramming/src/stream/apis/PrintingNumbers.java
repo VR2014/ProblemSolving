@@ -18,6 +18,7 @@ public class PrintingNumbers {
 
 	}
 
+	@SuppressWarnings("unused")
 	private static void printNumbers(List<Integer> of) {
 		for (int a : of) {
 			System.out.println(a);

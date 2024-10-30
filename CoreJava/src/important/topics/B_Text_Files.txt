@@ -1,0 +1,57 @@
+--
+
+**File Handling in Java: Key Concepts and Interview Notes**
+
+---
+
+1. **Basics of File Handling**  
+   - **File Class**: Represents files and directories in Java.  
+   - **Path Types**:  
+     - **Absolute Path**: Complete path starting from the root directory (e.g., "D:\\path\\file.txt").  
+     - **Relative Path**: Uses "./" to refer to the current directory (e.g., "./file.txt").  
+
+---
+
+2. **Essential File Methods**  
+   - **File Creation & Deletion**:  
+     - `createNewFile()`: Creates a new file if it doesn’t exist.  
+     - `delete()`: Deletes a file or empty directory.  
+   - **File Existence**:  
+     - `exists()`: Checks if the file or directory exists.  
+   - **File Properties**:  
+     - `isHidden()`: Checks if the file is hidden.  
+     - `setWritable(true/false)`: Sets or removes write permission.  
+     - `canWrite()`: Checks if the file is writable.  
+
+---
+
+3. **Directory Operations**  
+   - **Creating Directories**:  
+     - `mkdirs()`: Creates multiple directories, including any necessary parent directories.  
+   - **Directory Listing**:  
+     - `list()`: Returns names of files and directories within the specified directory.  
+     - `listFiles()`: Returns `File` objects for each item in the directory.  
+
+---
+
+4. **Handling IOExceptions**  
+   - **Error Handling**:  
+     - Many file operations can throw `IOException`.  
+     - Use `throws IOException` in the method signature or handle with `try-catch` to manage exceptions.  
+
+---
+
+5. **Text File Handling Techniques**  
+   - **Reading Files**:  
+     - `FileInputStream`: Reads bytes from a file.  
+     - `Scanner`: Reads text, line-by-line.  
+     - `FileReader`: Reads characters from a file.  
+     - `BufferedReader`: Efficiently reads lines of text, helpful for large files.  
+
+   - **Writing Files**:  
+     - `FileOutputStream`: Writes bytes to a file.  
+     - `FileWriter`: Writes characters to a file.  
+     - `BufferedWriter`: Buffered writing, more efficient for large files.  
+
+---
+

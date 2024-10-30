@@ -1,0 +1,36 @@
+Exception Handling in Java
+---------------------------
+
+Exception is an event that occurs during the execution of a program and disturbs the flow of execution.
+
+Types of Exceptions:
+- Checked Exceptions (Compile-time exceptions): Must be caught or declared in the method signature.
+- Unchecked Exceptions (Runtime Exceptions): Do not need to be declared or handled explicitly.
+
+Exception Handling Mechanism:
+- try: Code that might throw an exception is placed inside this block.
+- catch: This block catches exceptions thrown by the try block and allows for handling or logging.
+- finally: This block executes regardless of whether an exception occurred, allowing for cleanup actions.
+
+Stack Trace:
+- Exception name: The type of the exception that occurred.
+- Exception message: A description of the exception.
+- Line number: The line in the code where the exception was thrown.
+- Method info: Information about the method where the exception occurred.
+
+Throw and throws :
+- throw: Used to explicitly throw an exception, which stops the execution.
+- throws: Used in method signatures to declare that a method might throw a checked exception.
+
+Hierarchy of Exceptions:
+- Object
+  - Throwable
+    - Exception
+      - RuntimeException
+        - IndexOutOfBoundsException
+        - NullPointerException
+        - ArithmeticException
+      - IOException
+        - FileNotFoundException
+      - SQLException
+

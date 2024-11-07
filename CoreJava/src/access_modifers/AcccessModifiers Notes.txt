@@ -1,0 +1,14 @@
+A classs can never a private
+
+
+Within the Same Class
+Within the Same Package
+Outside of Package (Non-Subclass)
+Outside of Package (Subclass)
+
+Scenario							public	protected	default		private
+Within the Same Class				✅			✅			✅		✅
+Within the Same Package				✅			✅			✅		❌
+Outside the Package (Non-Subclass)	✅			❌			❌		❌
+Outside the Package (Subclass)		✅			✅ 			❌		❌
+ 											(inheritance)

@@ -1,0 +1,52 @@
+Interface:
+An interface acts as a bridge between the business logic and the service provider. 
+It serves as a blueprint for a class, defining what to do without specifying how to do it.
+
+An interface contains unimplemented methods (abstract methods) that provide a list of actions to be performed.
+Any class that implements an interface must override and implement all the methods defined in the interface.
+Interfaces support multiple inheritance in Java, allowing a class to implement multiple interfaces
+
+
+Key Points:
+Interfaces allow for polymorphism by enabling objects to be referenced by their interface type.
+They ensure loose coupling between components, making the code more flexible and easier to maintain.
+
+we can extends and implements on same class .
+
+====================================================================================
+
+Abstract Class:
+
+An abstract class is nothing but a class.
+It contains abstract methods (methods without implementation) and is defined with the abstract keyword.
+It acts as a blueprint between an interface and a regular class.
+
+Before Java 8:
+Before Java 8, if a class implements an interface, it must implement all of its methods.
+To solve this, Java introduced an abstract class. It allows you to implement some methods and leave others abstract.
+
+Abstract Class vs Interface:
+An abstract class can implement an interface and doesn’t need to implement all methods.
+ It gives flexibility by letting subclasses provide implementations for abstract methods.
+
+Abstract Method:
+If a class doesn’t provide an implementation for a method, we need to make it abstract. This indicates that subclasses will implement the method.
+
+Abstract Keyword:
+The abstract keyword is a non-access modifier.
+
+When to Use:
+When we want to provide common functionality among many classes and some unimplemented methods.
+To avoid having unimplemented methods in an interface.
+
+Key Points:
+We can't create an instance of an abstract class because it contains abstract methods.
+We can have both abstract and non-abstract methods in an abstract class.
+We cannot extend multiple abstract classes due to the diamond problem in Java.
+We cannot implement an abstract class like an interface. As it is a class, we can only extend it.
+
+
+
+
+
+

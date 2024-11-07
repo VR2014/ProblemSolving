@@ -1,0 +1,101 @@
+What is a Task?
+------------------
+A task is any work or activity that is performed.
+
+
+What is Multitasking?
+---------------------
+When you perform two or more tasks at the same time, it is called multitasking.
+
+
+
+What is a Process?
+------------------
+A process is the way you doing a task or work.
+
+
+
+What is Multiprocessing?
+--------------------------
+Multiprocessing is doing several tasks at the same time using multiple processors.
+
+
+
+What is a Thread?
+-----------------
+In programming, a thread is the smallest unit that performs a task within a process.
+
+
+
+What is Multithreading?
+-----------------------------
+Multithreading is when multiple threads perform different tasks at the same time in a single process.
+
+
+Why do we use Multithreading, and how has it changed programming?
+---------------------------------------------------------------------
+Without multithreading, we would depend only on the main processor,
+which can slow things down. Multithreading allows multiple tasks to be handled at once,
+making programs faster and more efficient.
+
+		Process (PID): Every process has a unique Process ID (PID) and may have one or more threads.
+		Thread (Thread ID): Each thread has its own Thread ID, and more threads mean more tasks can be done at the same time.
+
+### Threading Before Multi-Threading
+- The default thread in Java is the **main thread**, created automatically when we run the `main` method.
+- A thread has a **name**, **ID**, **priority**, and belongs to a **group**.
+- `currentThread` provides the current running thread’s information.
+- `getName` and `getId` give the thread’s name and ID.
+- Using the `start` method, a thread begins its execution.
+- Once a thread finishes its work, Java immediately "kills" that thread.
+- Only the **main thread** stays alive until the program ends.
+- When we create multiple threads, they may not execute in sequence.
+- Thread execution depends on the **JVM** and **CPU**.
+
+---
+
+### Thread Lifecycle
+1. **New** - A thread is created but hasn’t started yet.
+2. **Runnable** - A thread is ready to run or is running.
+3. **Blocked** - A thread is blocked, waiting for a resource.
+4. **Waiting** - When using `join`, the thread is waiting for another to complete.
+5. **Timed Waiting** - When using `sleep`, the thread waits for a specific amount of time.
+6. **Terminated** - The thread has completed its execution.
+
+---
+
+### Ways to Implement Threads
+
+1. **Extending the Thread class**  
+   - Create a new class that extends `Thread` and overrides the `run` method.
+  
+2. **Implementing the Runnable interface**  
+   - Create a new class that implements `Runnable` and defines the `run` method. This way, the class can extend other classes if needed.
+   
+3. **Using an Anonymous class**  
+   - We can define a thread without creating a separate class by creating an anonymous `Runnable` instance.
+
+4. **Using Lambda Expressions**  
+   - Since `Runnable` is a functional interface, we can use lambda expressions to simplify thread creation.
+
+
+==============
+
+Problems with Multithreading, Race Condition, Synchronization, and Volatile  ::
+--------------------------------------------------------------------------------
+
+
+* When multiple threads are updating the same data, issues can arise from repeatedly modifying it at the same time.
+This situation is known as a race condition.
+
+* To avoid race conditions, we use the synchronized keyword.
+* This prevents other threads from accessing the data while one thread is updating it.
+* Synchronization can be applied at the method level, or we can create a block and 
+	specify only the elements that need to be synchronized.
+* On the other hand, volatile prevents multiple threads from accessing the same elements 
+	simultaneously but does not help in managing or controlling data manipulation.
+
+
+
+
+

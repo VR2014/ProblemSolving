@@ -1,0 +1,124 @@
+
+Static:
+
+Shared memory will be allocated at the time of class loading.
+Can be accessed by class name.
+
+Static Block:
+
+Useful in variable initialization.
+No name is needed.
+Executes before the main() method.
+
+
+static {
+    // static block code
+}
+Inside static members, we cannot call non-static members directly due to memory allocation timing.
+
+Non-Static:
+
+Memory will be allocated whenever a new object is created.
+Can be accessed by reference name.
+
+Non-Static Block:
+
+Executes before the constructor.
+Useful in variable initialization.
+No name is needed.
+
+
+{
+    // non-static block code
+}
+
+Inside non-static blocks, we can directly call static members.
+
+
+========================================================================
+
+1. Constructors in Java:
+Purpose: Constructors are used to initialize objects and they do not have a return type.
+Default Constructor: If no constructor is provided, the compiler will provide a default constructor.
+Parameterized Constructor: If you define a constructor with parameters, it does not automatically provide a default constructor. You need to provide a default constructor explicitly if needed.
+2. Types of Constructors:
+Default Constructor: A constructor that takes no parameters.
+Parameterized Constructor: A constructor that takes parameters to initialize the object's attributes.
+3. Access Modifiers for Constructors:
+Constructors can have the following access modifiers:
+public
+protected
+private
+Constructors cannot be:
+final (cannot be overridden)
+default (default access level is not allowed)
+4. Constructor Overloading:
+Constructor overloading is possible in Java. This happens when a class has multiple constructors with the same name (the class name), but with different parameter lists (either different number of parameters or different types of parameters).
+
+Example: You can have both a default constructor and a parameterized constructor in the same class.
+
+5. Constructor Overriding:
+Constructor overriding is not possible because constructors are not inherited in Java.
+To access superclass members (such as constructors, variables, and methods), the super() keyword is used.
+
+6.Constructor Initialization Order:
+Superclass constructor is called first, either implicitly or using super(). The subclass constructor is called afterward.
+
+7.Constructor Chaining:
+You can chain constructors in the same class using this() to reuse initialization code.
+
+8.Default Constructor Behavior:
+If any constructor (including parameterized) is provided in a class, the default constructor is not automatically provided unless explicitly defined.
+
+===================================================================================================
+
+
+Inheritance:
+
+A class acquiring/getting properties from one class to another class is known as inheritance.
+
+A class giving properties to its subclass is known as the superclass.
+A class getting properties from its superclass is known as the subclass.
+
+Using the extends keyword, a subclass can get the properties from the superclass.
+
+Multiple inheritance is not possible in Java due to the diamond problem.
+
+In the case where a class extends from two of its superclasses, Java might be confused about which class's properties to inherit. This is known as the diamond problem.
+
+
+Types of Inheritance in Java
+
+Single Inheritance: A class inherits from only one superclass.
+Multilevel Inheritance: A class is derived from another class, which is itself derived from another class, forming a chain.
+Hierarchical Inheritance: Multiple classes inherit from a single superclass
+
+Super Keyword
+The super keyword is used to access properties and methods of the superclass from the subclass.
+It's commonly used when a subclass has methods or fields with the same name as the superclass or to call the superclass's constructor.
+
+"IS-A" Relationship
+Inheritance represents an "IS-A" relationship. If a class Dog inherits from Animal, we can say that a Dog is an Animal.
+This relationship is useful in hierarchical structures and type generalization in object-oriented programming.
+
+ "HAS-A" Relationship (Composition)
+Instead of inheriting, sometimes a class has an instance of another class as a field, known as composition or a "HAS-A" relationship.
+For example, a Car class might have an Engine class, but a car is not an engine.
+
+===================================================================================================
+
+Here’s a correction with minimal changes to retain your understanding:
+
+---
+
+**Method Overloading and Overriding**
+
+**Overloading:**  
+In the same class, having multiple methods with the same name but different parameters and implementations is known as overloading.
+
+**Usage:** Used in naming conventions for the same functionality.
+
+**Overriding:**  
+For superclass methods, we need to inherit the same methods. Here, the method name and parameters are the same, but the implementation is different.
+
+**Usage:** Reuse of methods and functionality, providing new features to the same.

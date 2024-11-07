@@ -1,6 +1,4 @@
-package oops;
-
-import javax.management.remote.SubjectDelegationPermission;
+package com.oops;
 
 public class Inheritance {
 	public static void main(String[] args) {
@@ -20,7 +18,9 @@ class guest {
 }
 
 class Dev extends guest {
+	
 	public void readAndWrite() {
+		super.readOnly();
 		System.out.println("can write");
 	}
 }

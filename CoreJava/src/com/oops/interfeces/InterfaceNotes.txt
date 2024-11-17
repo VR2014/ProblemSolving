@@ -46,7 +46,24 @@ We cannot extend multiple abstract classes due to the diamond problem in Java.
 We cannot implement an abstract class like an interface. As it is a class, we can only extend it.
 
 
+=========================================================================
 
 
+Abstraction ::
 
+The Processes of hiding complex implementation and providing necessary functionality is known as
+Abstarction.
 
+before java 8, using interface and abstract class we can Achive the abstraction.
+
+after java 8 it may be 50%, because it depends on user 
+
+========================
+
+Encapsulation ::
+
+Encapsulation is the process of securing data by restricting direct access
+by providing public methods to access the data .
+
+Setter: A setter is a public method used to set or update the value of private  data .
+Getter: A getter is a public method used to retrieve the value of a private data .

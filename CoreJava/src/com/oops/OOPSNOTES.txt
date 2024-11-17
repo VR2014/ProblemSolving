@@ -49,9 +49,11 @@ Constructors can have the following access modifiers:
 public
 protected
 private
+
 Constructors cannot be:
 final (cannot be overridden)
 default (default access level is not allowed)
+
 4. Constructor Overloading:
 Constructor overloading is possible in Java. This happens when a class has multiple constructors with the same name (the class name), but with different parameter lists (either different number of parameters or different types of parameters).
 
@@ -106,19 +108,25 @@ Instead of inheriting, sometimes a class has an instance of another class as a f
 For example, a Car class might have an Engine class, but a car is not an engine.
 
 ===================================================================================================
+Polymorphism: An object can behave in multiple ways.
 
-Here’s a correction with minimal changes to retain your understanding:
+Compile-time Polymorphism:
+Achieved at compile time.
+Also known as early binding or static polymorphism.
+Compile-time polymorphism can be achieved through method overloading.
 
----
+Run-time Polymorphism:
+Achieved at run time.
+Also referred to as late binding, dynamic polymorphism, or dynamic method dispatch.
+Run-time polymorphism is achieved through method overriding.
 
-**Method Overloading and Overriding**
+Method Overloading and Overriding
+-----------------------------------
 
-**Overloading:**  
-In the same class, having multiple methods with the same name but different parameters and implementations is known as overloading.
+Overloading:
+Having multiple methods with the same name but different parameters and implementations.
+Usage: Used for providing the same functionality under different conditions or parameters.
 
-**Usage:** Used in naming conventions for the same functionality.
-
-**Overriding:**  
-For superclass methods, we need to inherit the same methods. Here, the method name and parameters are the same, but the implementation is different.
-
-**Usage:** Reuse of methods and functionality, providing new features to the same.
+Overriding:
+Having methods with the same name and parameters, but different implementations in a subclass.
+Usage: Reuse and extend functionality, providing new features to the same method name.

@@ -31,6 +31,7 @@ public class FP02 {
 		System.out.println("reverseListOfString   :::  ");
 		li.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println);
 		
+		
 		System.out.println("based on length   :::  ");
 		li.stream()
 					.sorted(Comparator.comparing(st->st.length())).forEach(System.out :: println);

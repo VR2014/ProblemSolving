@@ -18,6 +18,7 @@ we can extends and implements on same class .
 Abstract Class:
 
 An abstract class is nothing but a class.
+A class to be called as a Abstact class . that should have atlease one abstract method or class should have abstact keyword.
 It contains abstract methods (methods without implementation) and is defined with the abstract keyword.
 It acts as a blueprint between an interface and a regular class.
 
@@ -30,7 +31,8 @@ An abstract class can implement an interface and doesn’t need to implement all
  It gives flexibility by letting subclasses provide implementations for abstract methods.
 
 Abstract Method:
-If a class doesn’t provide an implementation for a method, we need to make it abstract. This indicates that subclasses will implement the method.
+If a class doesn’t provide an implementation for a method, we need to make it abstract.
+ This indicates that subclasses will implement the method.
 
 Abstract Keyword:
 The abstract keyword is a non-access modifier.
@@ -46,7 +48,24 @@ We cannot extend multiple abstract classes due to the diamond problem in Java.
 We cannot implement an abstract class like an interface. As it is a class, we can only extend it.
 
 
+=========================================================================
 
 
+Abstraction ::
 
+The Processes of hiding complex implementation and providing necessary functionality is known as
+Abstarction.
 
+before java 8, using interface and abstract class we can Achive the abstraction.
+
+after java 8 it may be 50%, because it depends on user 
+
+========================
+
+Encapsulation ::
+
+the providing  security to the data from the direct Access. is known as encapsulation.
+by providing public methods to access the data .
+
+Getter: A public method which can access the data and get / retrive the data known as getter.
+Setter: A public method which can access the data and set the data is known as setter .

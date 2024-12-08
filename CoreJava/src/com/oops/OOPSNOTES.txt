@@ -40,10 +40,13 @@ Inside non-static blocks, we can directly call static members.
 1. Constructors in Java:
 Purpose: Constructors are used to initialize objects and they do not have a return type.
 Default Constructor: If no constructor is provided, the compiler will provide a default constructor.
-Parameterized Constructor: If you define a constructor with parameters, it does not automatically provide a default constructor. You need to provide a default constructor explicitly if needed.
+Parameterized Constructor: If you define a constructor with parameters, it does not automatically provide
+ a default constructor.You need to provide a default constructor explicitly if needed.
+ 
 2. Types of Constructors:
 Default Constructor: A constructor that takes no parameters.
 Parameterized Constructor: A constructor that takes parameters to initialize the object's attributes.
+
 3. Access Modifiers for Constructors:
 Constructors can have the following access modifiers:
 public
@@ -52,13 +55,10 @@ private
 Constructors cannot be:
 final (cannot be overridden)
 default (default access level is not allowed)
+
+
 4. Constructor Overloading:
 Constructor overloading is possible in Java. This happens when a class has multiple constructors with the same name (the class name), but with different parameter lists (either different number of parameters or different types of parameters).
-
-Example: You can have both a default constructor and a parameterized constructor in the same class.
-
-5. Constructor Overriding:
-Constructor overriding is not possible because constructors are not inherited in Java.
 To access superclass members (such as constructors, variables, and methods), the super() keyword is used.
 
 6.Constructor Initialization Order:
@@ -106,19 +106,25 @@ Instead of inheriting, sometimes a class has an instance of another class as a f
 For example, a Car class might have an Engine class, but a car is not an engine.
 
 ===================================================================================================
+Polymorphism: An object can behave in multiple ways.
 
-Here’s a correction with minimal changes to retain your understanding:
+Compile-time Polymorphism:
+Achieved at compile time.
+Also known as early binding or static polymorphism.
+Compile-time polymorphism can be achieved through method overloading.
 
----
+Run-time Polymorphism:
+Achieved at run time.
+Also referred to as late binding, dynamic polymorphism, or dynamic method dispatch.
+Run-time polymorphism is achieved through method overriding.
 
-**Method Overloading and Overriding**
+Method Overloading and Overriding
+-----------------------------------
 
-**Overloading:**  
-In the same class, having multiple methods with the same name but different parameters and implementations is known as overloading.
+Overloading:
+Having or more methods with the same name but different parameters and implementations.
+Usage: Used for providing the same functionality under different conditions parameters.
 
-**Usage:** Used in naming conventions for the same functionality.
-
-**Overriding:**  
-For superclass methods, we need to inherit the same methods. Here, the method name and parameters are the same, but the implementation is different.
-
-**Usage:** Reuse of methods and functionality, providing new features to the same.
+Overriding:
+Having methods with the same name and parameters, but different implementations in a subclass.
+Usage: Reuse and extend functionality, providing new features to the same method name.

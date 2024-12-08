@@ -1,23 +1,39 @@
+How does Java handle memory management?
+
+Java handles memory management using the JVM.
+ It divides memory into the stack (for method calls and local variables) and the heap (for objects).
+The Garbage Collector (GC) automatically removes unreferenced objects from the heap, reducing memory leaks.
+ As a developer, I focus on writing efficient code by reusing objects, closing resources,
+  and using weak references when needed. Tools like JVisualVM help monitor memory usage to avoid memory issues.
+
 
 Garbage Collection
 
-Definition: Garbage Collection (GC) in Java is a process that automatically removes unused or unreferenced objects from memory to free up space.
-Purpose: It helps manage memory efficiently, ensuring that objects that are no longer in use are removed, which prevents memory leaks and optimizes application performance.
-How to Start Garbage Collection:
+Definition: Garbage Collection (GC) in Java is a process that automatically removes
+ unused or unreferenced objects from memory to free up space.
+Purpose: It helps manage memory efficiently, ensuring that objects that are no longer in use are removed,
+ which prevents memory leaks and optimizes application performance.
+ 
+How to Start Garbage Collection :
 
 System.gc(): You can suggest GC by calling System.gc(), but it's not guaranteed to run immediately.
-Runtime.getRuntime().gc(): Another way to request GC is by using Runtime.getRuntime().gc(). However, these methods only suggest GC to the JVM, which ultimately decides when to run it.
+Runtime.getRuntime().gc(): Another way to request GC is by using Runtime.getRuntime().gc(). 
+However, these methods only suggest GC to the JVM, which ultimately decides when to run it.
+
 Heap vs Stack
 Heap:
-
 Stores objects created dynamically and instance variables.
 Managed by the garbage collector to free up memory for unreferenced objects.
 Accessible globally; objects in the heap are accessible across different methods.
+
 Stack:
 
 Stores method calls, local variables, and reference variables.
 Managed automatically based on method calls (last in, first out – LIFO).
 Each thread has its own stack.
+
 finalize() Method
+
 The finalize() method is called by the garbage collector before destroying an object.
-You can override finalize() to perform cleanup tasks, but it’s not recommended for normal use because it’s unreliable (not guaranteed to be called) and can cause performance issues.
+You can override finalize() to perform cleanup tasks, but it’s not recommended for normal 
+use because it’s unreliable (not guaranteed to be called) and can cause performance issues.

@@ -12,3 +12,11 @@ Within the Same Package				✅			✅			✅		❌
 Outside the Package (Non-Subclass)	✅			❌			❌		❌
 Outside the Package (Subclass)		✅			✅ 			❌		❌
  											(inheritance)
+ 											
+ 											
+Feature					volatile										transient
+Purpose					Ensures visibility of changes across threads.	Excludes variables from serialization.
+Use Case				Multi-threading.								Serialization.
+Effect on Memory		Forces read/write from main memory.				Skips variable during object persistence.
+Thread-Safety			Provides visibility but not atomicity.			No impact on thread-safety.
+Serialization			Included in serialization.						Excluded from serialization.

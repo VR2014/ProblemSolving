@@ -95,7 +95,8 @@ Object
      ```
 
 3. **General Exception Handling**:
-   - You can handle multiple exceptions by specifying `throws Exception` or `throws Throwable` in the method signature, but it is best to specify exact exceptions for clarity and maintainability.
+   - You can handle multiple exceptions by specifying `throws Exception` or `throws Throwable` in the method signature, 
+   but it is best to specify exact exceptions for clarity and maintainability.
 
 ---
 

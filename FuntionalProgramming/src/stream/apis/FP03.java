@@ -17,8 +17,8 @@ public class FP03 {
 
 	private static void lengthOfStrings(List<String> li) {
 		System.out.println("lengthOfStrings   :::  ");
-		li.stream()
-										.map(x->x.length()).collect(Collectors.toList()).forEach(System.out::println);
+		li.stream().map(x->x.length())
+					.collect(Collectors.toList()).forEach(System.out::println);
 	}
 
 	private static void doubleList(List<Integer> num) {

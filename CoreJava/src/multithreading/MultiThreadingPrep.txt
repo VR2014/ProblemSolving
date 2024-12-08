@@ -38,8 +38,8 @@ Without multithreading, we would depend only on the main processor,
 which can slow things down. Multithreading allows multiple tasks to be handled at once,
 making programs faster and more efficient.
 
-		Process (PID): Every process has a unique Process ID (PID) and may have one or more threads.
-		Thread (Thread ID): Each thread has its own Thread ID, and more threads mean more tasks can be done at the same time.
+Process (PID): Every process has a unique Process ID (PID) and may have one or more threads.
+Thread (Thread ID): Each thread has its own Thread ID, and more threads mean more tasks can be done at the same time.
 
 ### Threading Before Multi-Threading
 - The default thread in Java is the **main thread**, created automatically when we run the `main` method.
@@ -64,7 +64,7 @@ making programs faster and more efficient.
 
 ---
 
-### Ways to Implement Threads
+### Ways to Implement Threads -> Thread Class , Runnable Interface, Anonymus class , Lambda expression
 
 1. **Extending the Thread class**  
    - Create a new class that extends `Thread` and overrides the `run` method.
@@ -90,8 +90,6 @@ This situation is known as a race condition.
 
 * To avoid race conditions, we use the synchronized keyword.
 * This prevents other threads from accessing the data while one thread is updating it.
-* Synchronization can be applied at the method level, or we can create a block and 
-	specify only the elements that need to be synchronized.
 * On the other hand, volatile prevents multiple threads from accessing the same elements 
 	simultaneously but does not help in managing or controlling data manipulation.
 

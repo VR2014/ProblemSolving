@@ -10,11 +10,19 @@ This Byte Stream can be sent Over a Network or saved in DB for Future Purpose.
 MarkerInterface : 
 
 Marker Interface is an interface with out no methods .
-if any class inmplements the markerinterface . that class marked as an special one 
+if any class implements the markerinterface . that class marked as an special one 
 and its gives a special behavior.  and its signals to jvm that it should handle in a 
 certain way.
 
 EX : Serialization is an marker interface . it handles in a way of serialization and de serialization.
+
+
+Transient Keyword:
+
+The transient keyword is used to indicate that a particular field of a class should not be serialized.
+ When a field is marked as transient, it will not be included in the serialization process.
+
+Purpose: Prevents sensitive or unnecessary data from being serialized.
 
 
   

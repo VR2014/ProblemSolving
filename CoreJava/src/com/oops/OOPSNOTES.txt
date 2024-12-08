@@ -52,18 +52,13 @@ Constructors can have the following access modifiers:
 public
 protected
 private
-
 Constructors cannot be:
 final (cannot be overridden)
 default (default access level is not allowed)
 
+
 4. Constructor Overloading:
 Constructor overloading is possible in Java. This happens when a class has multiple constructors with the same name (the class name), but with different parameter lists (either different number of parameters or different types of parameters).
-
-Example: You can have both a default constructor and a parameterized constructor in the same class.
-
-5. Constructor Overriding:
-Constructor overriding is not possible because constructors are not inherited in Java.
 To access superclass members (such as constructors, variables, and methods), the super() keyword is used.
 
 6.Constructor Initialization Order:
